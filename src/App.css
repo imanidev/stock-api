@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  margin: auto;
+  text-align: center;
+}
+
+
 .nav {
   background-color: #000000;
   color: #fff;
@@ -6,7 +22,6 @@
   font-size: 20px;
   font-weight: bold;
   margin: auto;
-
 }
 
 .nav a {
@@ -14,8 +29,8 @@
   text-decoration: none;
 }
 
-a:hover {
-
+.nav a:hover {
+  color: white;
   text-decoration: none;
 }
 
@@ -27,3 +42,34 @@ a:hover {
   font-weight: bold;
   margin: auto;
 }
+
+a {
+  color: #1287c2;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+.about-h2 {
+  color: #b6abab;
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+}
+
+.stocklist {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: auto;
+  margin: 20px;
+  text-align: center;
+  border: solid 3px white;
+  display: inline-block;
+}
+
+/* .lstprc{
+  color:#4ac212;
+} */

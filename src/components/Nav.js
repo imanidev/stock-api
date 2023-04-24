@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom';
 
 export default function Nav(props) {
 	return (
+		
 		<div className="nav">
+			<h1 className='mainheader'>Stock App</h1>
 			<Link to="/">
 				<div>Home</div>
 			</Link>

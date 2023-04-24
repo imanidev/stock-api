@@ -7,10 +7,10 @@ const Stocks = () => {
 	Data.filter((company) => company.symbol === symbol); // filter the stocks array to return only the stock that matches the symbol in the url
 
 	const stockList = Data.map((company, index) => ( // map over the stocks array and return a div with the stock name and symbol
-		<div key={index}>  {/* use the index as the key */}
-			<h2> Name: {company.name} </h2>
-			<h2> Symbol: {company.symbol} </h2>
-			<h2> Last Price: {company.lastPrice} </h2>
+		<div key={index} className='stocklist'>  {/* use the index as the key */}
+			<h2> {company.name} </h2>
+			<h2> {company.symbol} </h2>
+			<h2> Last Price: <span className='lstprc'>{company.lastPrice}</span> </h2>
 		</div>
 	));
 

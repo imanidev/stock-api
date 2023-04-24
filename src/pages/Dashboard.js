@@ -4,12 +4,13 @@ import Data from '../Data';
 import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
-	const stocksArr = Data.map((item, index) => {
+	const stocksArr = Data.map((company, index) => {
 		// map over the stocks array and return a div with the stock name and symbol
 		return (
 			<div>
-				<Link to={`/Stocks/${item.symbol}/${index}`}>
-					<h2>{item.name}</h2>
+				<Link to={`/stocks/${company.symbol}/${index}`}>
+					<h2> {company.name} </h2>
+					{/* <h2>{ company.symbol}</h2> */}
 				</Link>
 			</div>
 		);
